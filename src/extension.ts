@@ -1,26 +1,433 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
+import { readFileSync } from 'fs';
+import path = require('path');
 import * as vscode from 'vscode';
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "markdow-grammer-hint" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('markdow-grammer-hint.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from markdow-grammer-hint!');
-	});
-
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(
+		vscode.commands.registerCommand('MGH', () => {
+			const panel = vscode.window.createWebviewPanel(
+				'MGH',
+				'markdown-grammer-hint',
+				vscode.ViewColumn.Beside,
+				{}
+			);
+			panel.webview.html = getWebviewContent();
+		})
+	);
 }
 
-// this method is called when your extension is deactivated
-export function deactivate() {}
+function getWebviewContent() {
+	return `
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width:100%;overflow-y:auto"><table><thead><tr><th>元素</th>
+        <th>Markdown 语法</th>
+        </tr></thead><tbody><tr><td>标题（Heading）</td>
+        <td># H1 <br> ## H2 <br> ### H3</td>
+        </tr><tr><td>粗体（Bold）</td>
+        <td><code>**bold text**</code></td>
+        </tr><tr><td>斜体（Italic）</td>
+        <td><code>*italicized text*</code></td>
+        </tr><tr><td>引用块（Blockquote）</td>
+        <td>&gt; blockquote</td>
+        </tr><tr><td>有序列表（Ordered List）</td>
+        <td>1. First item <br> 2. Second item <br> 3. Third item</td>
+        </tr><tr><td>无序列表（Unordered List）</td>
+        <td>- First item <br> - Second item <br> - Third item</td>
+        </tr><tr><td>代码（Code）</td>
+        <td>\`code\`</td>
+        </tr><tr><td>分隔线（Horizontal Rule）</td>
+        <td>---</td>
+        </tr><tr><td>链接（Link）</td>
+        <td><code>[title](url)</code></td>
+        </tr><tr><td>图片（Image）</td>
+        <td><code>![alt text](image.jpg)</code></td>
+        </tr></tbody></table></div>
+		<div style="width:100%;overflow-y:auto"><table><thead><tr><th>元素</th>
+		<th>Markdown 语法</th>
+		</tr></thead><tbody><tr><td>| 表格（Table）</td>
+		<td>| Syntax      | Description | <br> | ----------- | ----------- | <br> | Header &nbsp; | Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  <br> | Paragraph   | Text &nbsp;&nbsp; |</td>
+		</tr><tr><td>代码块（Fenced Code Block）</td>
+		<td>\`\`\` <br> { <br> "firstName": "John", <br> "lastName": "Smith", <br> "age": 25 <br> } <br> \`\`\`</td>
+		</tr><tr><td>脚注（Footnote）</td>
+		<td>Here's a sentence with a footnote. [^1] <br> [^1]: This is the footnote.</td>
+		</tr><tr><td>标题编号（Heading ID）</td>
+		<td>### My Great Heading {#custom-id}</td>
+		</tr><tr><td>定义列表（Definition List）</td>
+		<td>term <br> : definition</td>
+		</tr><tr><td>删除线（Strikethrough）</td>
+		<td>~~The world is flat.~~</td>
+		</tr><tr><td>任务列表（Task List）</td>
+		<td>- [x] Write the press release <br> - [ ] Update the website <br> - [ ] Contact the media</td>
+		</tr></tbody></table></div>
+			"100": "💯",
+			"1234": "🔢",
+			"grinning": "😀",
+			"smiley": "😃",
+			"smile": "😄",
+			"grin": "😁",
+			"laughing": "😆",
+			"satisfied": "😆",
+			"sweat_smile": "😅",
+			"rofl": "🤣",
+			"joy": "😂",
+			"slightly_smiling_face": "🙂",
+			"upside_down_face": "🙃",
+			"wink": "😉",
+			"blush": "😊",
+			"innocent": "😇",
+			"smiling_face_with_three_hearts": "🥰",
+			"heart_eyes": "😍",
+			"star_struck": "🤩",
+			"kissing_heart": "😘",
+			"kissing": "😗",
+			"relaxed": "☺️",
+			"kissing_closed_eyes": "😚",
+			"kissing_smiling_eyes": "😙",
+			"smiling_face_with_tear": "🥲",
+			"yum": "😋",
+			"stuck_out_tongue": "😛",
+			"stuck_out_tongue_winking_eye": "😜",
+			"zany_face": "🤪",
+			"stuck_out_tongue_closed_eyes": "😝",
+			"money_mouth_face": "🤑",
+			"hugs": "🤗",
+			"hand_over_mouth": "🤭",
+			"shushing_face": "🤫",
+			"thinking": "🤔",
+			"zipper_mouth_face": "🤐",
+			"raised_eyebrow": "🤨",
+			"neutral_face": "😐",
+			"expressionless": "😑",
+			"no_mouth": "😶",
+			"smirk": "😏",
+			"unamused": "😒",
+			"roll_eyes": "🙄",
+			"grimacing": "😬",
+			"lying_face": "🤥",
+			"relieved": "😌",
+			"pensive": "😔",
+			"sleepy": "😪",
+			"drooling_face": "🤤",
+			"sleeping": "😴",
+			"mask": "😷",
+			"face_with_thermometer": "🤒",
+			"face_with_head_bandage": "🤕",
+			"nauseated_face": "🤢",
+			"vomiting_face": "🤮",
+			"sneezing_face": "🤧",
+			"hot_face": "🥵",
+			"cold_face": "🥶",
+			"woozy_face": "🥴",
+			"dizzy_face": "😵",
+			"exploding_head": "🤯",
+			"cowboy_hat_face": "🤠",
+			"partying_face": "🥳",
+			"disguised_face": "🥸",
+			"sunglasses": "😎",
+			"nerd_face": "🤓",
+			"monocle_face": "🧐",
+			"confused": "😕",
+			"worried": "😟",
+			"slightly_frowning_face": "🙁",
+			"frowning_face": "☹️",
+			"open_mouth": "😮",
+			"hushed": "😯",
+			"astonished": "😲",
+			"flushed": "😳",
+			"pleading_face": "🥺",
+			"frowning": "😦",
+			"anguished": "😧",
+			"fearful": "😨",
+			"cold_sweat": "😰",
+			"disappointed_relieved": "😥",
+			"cry": "😢",
+			"sob": "😭",
+			"scream": "😱",
+			"confounded": "😖",
+			"persevere": "😣",
+			"disappointed": "😞",
+			"sweat": "😓",
+			"weary": "😩",
+			"tired_face": "😫",
+			"yawning_face": "🥱",
+			"triumph": "😤",
+			"rage": "😡",
+			"pout": "😡",
+			"angry": "😠",
+			"cursing_face": "🤬",
+			"smiling_imp": "😈",
+			"imp": "👿",
+			"skull": "💀",
+			"skull_and_crossbones": "☠️",
+			"hankey": "💩",
+			"poop": "💩",
+			"shit": "💩",
+			"clown_face": "🤡",
+			"japanese_ogre": "👹",
+			"japanese_goblin": "👺",
+			"ghost": "👻",
+			"alien": "👽",
+			"space_invader": "👾",
+			"robot": "🤖",
+			"smiley_cat": "😺",
+			"smile_cat": "😸",
+			"joy_cat": "😹",
+			"heart_eyes_cat": "😻",
+			"smirk_cat": "😼",
+			"kissing_cat": "😽",
+			"scream_cat": "🙀",
+			"crying_cat_face": "😿",
+			"pouting_cat": "😾",
+			"see_no_evil": "🙈",
+			"hear_no_evil": "🙉",
+			"speak_no_evil": "🙊",
+			"kiss": "💋",
+			"love_letter": "💌",
+			"cupid": "💘",
+			"gift_heart": "💝",
+			"sparkling_heart": "💖",
+			"heartpulse": "💗",
+			"heartbeat": "💓",
+			"revolving_hearts": "💞",
+			"two_hearts": "💕",
+			"heart_decoration": "💟",
+			"heavy_heart_exclamation": "❣️",
+			"broken_heart": "💔",
+			"heart": "❤️",
+			"orange_heart": "🧡",
+			"yellow_heart": "💛",
+			"green_heart": "💚",
+			"blue_heart": "💙",
+			"purple_heart": "💜",
+			"brown_heart": "🤎",
+			"black_heart": "🖤",
+			"white_heart": "🤍",
+			"anger": "💢",
+			"boom": "💥",
+			"collision": "💥",
+			"dizzy": "💫",
+			"sweat_drops": "💦",
+			"dash": "💨",
+			"hole": "🕳️",
+			"bomb": "💣",
+			"speech_balloon": "💬",
+			"eye_speech_bubble": "👁️‍🗨️",
+			"left_speech_bubble": "🗨️",
+			"right_anger_bubble": "🗯️",
+			"thought_balloon": "💭",
+			"zzz": "💤",
+			"wave": "👋",
+			"raised_back_of_hand": "🤚",
+			"raised_hand_with_fingers_splayed": "🖐️",
+			"hand": "✋",
+			"raised_hand": "✋",
+			"vulcan_salute": "🖖",
+			"ok_hand": "👌",
+			"pinched_fingers": "🤌",
+			"pinching_hand": "🤏",
+			"v": "✌️",
+			"crossed_fingers": "🤞",
+			"love_you_gesture": "🤟",
+			"metal": "🤘",
+			"call_me_hand": "🤙",
+			"point_left": "👈",
+			"point_right": "👉",
+			"point_up_2": "👆",
+			"middle_finger": "🖕",
+			"fu": "🖕",
+			"point_down": "👇",
+			"point_up": "☝️",
+			"+1": "👍",
+			"thumbsup": "👍",
+			"-1": "👎",
+			"thumbsdown": "👎",
+			"fist_raised": "✊",
+			"fist": "✊",
+			"fist_oncoming": "👊",
+			"facepunch": "👊",
+			"punch": "👊",
+			"fist_left": "🤛",
+			"fist_right": "🤜",
+			"clap": "👏",
+			"raised_hands": "🙌",
+			"open_hands": "👐",
+			"palms_up_together": "🤲",
+			"handshake": "🤝",
+			"pray": "🙏",
+			"writing_hand": "✍️",
+			"nail_care": "💅",
+			"selfie": "🤳",
+			"muscle": "💪",
+			"mechanical_arm": "🦾",
+			"mechanical_leg": "🦿",
+			"leg": "🦵",
+			"foot": "🦶",
+			"ear": "👂",
+			"ear_with_hearing_aid": "🦻",
+			"nose": "👃",
+			"brain": "🧠",
+			"anatomical_heart": "🫀",
+			"lungs": "🫁",
+			"tooth": "🦷",
+			"bone": "🦴",
+			"eyes": "👀",
+			"eye": "👁️",
+			"tongue": "👅",
+			"lips": "👄",
+			"baby": "👶",
+			"child": "🧒",
+			"boy": "👦",
+			"girl": "👧",
+			"adult": "🧑",
+			"blond_haired_person": "👱",
+			"man": "👨",
+			"bearded_person": "🧔",
+			"red_haired_man": "👨‍🦰",
+			"curly_haired_man": "👨‍🦱",
+			"white_haired_man": "👨‍🦳",
+			"bald_man": "👨‍🦲",
+			"woman": "👩",
+			"red_haired_woman": "👩‍🦰",
+			"person_red_hair": "🧑‍🦰",
+			"curly_haired_woman": "👩‍🦱",
+			"person_curly_hair": "🧑‍🦱",
+			"white_haired_woman": "👩‍🦳",
+			"person_white_hair": "🧑‍🦳",
+			"bald_woman": "👩‍🦲",
+			"person_bald": "🧑‍🦲",
+			"blond_haired_woman": "👱‍♀️",
+			"blonde_woman": "👱‍♀️",
+			"blond_haired_man": "👱‍♂️",
+			"older_adult": "🧓",
+			"older_man": "👴",
+			"older_woman": "👵",
+			"frowning_person": "🙍",
+			"frowning_man": "🙍‍♂️",
+			"frowning_woman": "🙍‍♀️",
+			"pouting_face": "🙎",
+			"pouting_man": "🙎‍♂️",
+			"pouting_woman": "🙎‍♀️",
+			"no_good": "🙅",
+			"no_good_man": "🙅‍♂️",
+			"ng_man": "🙅‍♂️",
+			"no_good_woman": "🙅‍♀️",
+			"ng_woman": "🙅‍♀️",
+			"ok_person": "🙆",
+			"ok_man": "🙆‍♂️",
+			"ok_woman": "🙆‍♀️",
+			"tipping_hand_person": "💁",
+			"information_desk_person": "💁",
+			"tipping_hand_man": "💁‍♂️",
+			"sassy_man": "💁‍♂️",
+			"tipping_hand_woman": "💁‍♀️",
+			"sassy_woman": "💁‍♀️",
+			"raising_hand": "🙋",
+			"raising_hand_man": "🙋‍♂️",
+			"raising_hand_woman": "🙋‍♀️",
+			"deaf_person": "🧏",
+			"deaf_man": "🧏‍♂️",
+			"deaf_woman": "🧏‍♀️",
+			"bow": "🙇",
+			"bowing_man": "🙇‍♂️",
+			"bowing_woman": "🙇‍♀️",
+			"facepalm": "🤦",
+			"man_facepalming": "🤦‍♂️",
+			"woman_facepalming": "🤦‍♀️",
+			"shrug": "🤷",
+			"man_shrugging": "🤷‍♂️",
+			"woman_shrugging": "🤷‍♀️",
+			"health_worker": "🧑‍⚕️",
+			"man_health_worker": "👨‍⚕️",
+			"woman_health_worker": "👩‍⚕️",
+			"student": "🧑‍🎓",
+			"man_student": "👨‍🎓",
+			"woman_student": "👩‍🎓",
+			"teacher": "🧑‍🏫",
+			"man_teacher": "👨‍🏫",
+			"woman_teacher": "👩‍🏫",
+			"judge": "🧑‍⚖️",
+			"man_judge": "👨‍⚖️",
+			"woman_judge": "👩‍⚖️",
+			"farmer": "🧑‍🌾",
+			"man_farmer": "👨‍🌾",
+			"woman_farmer": "👩‍🌾",
+			"cook": "🧑‍🍳",
+			"man_cook": "👨‍🍳",
+			"woman_cook": "👩‍🍳",
+			"mechanic": "🧑‍🔧",
+			"man_mechanic": "👨‍🔧",
+			"woman_mechanic": "👩‍🔧",
+			"factory_worker": "🧑‍🏭",
+			"man_factory_worker": "👨‍🏭",
+			"woman_factory_worker": "👩‍🏭",
+			"office_worker": "🧑‍💼",
+			"man_office_worker": "👨‍💼",
+			"woman_office_worker": "👩‍💼",
+			"scientist": "🧑‍🔬",
+			"man_scientist": "👨‍🔬",
+			"woman_scientist": "👩‍🔬",
+			"technologist": "🧑‍💻",
+			"man_technologist": "👨‍💻",
+			"woman_technologist": "👩‍💻",
+			"singer": "🧑‍🎤",
+			"man_singer": "👨‍🎤",
+			"woman_singer": "👩‍🎤",
+			"artist": "🧑‍🎨",
+			"man_artist": "👨‍🎨",
+			"woman_artist": "👩‍🎨",
+			"pilot": "🧑‍✈️",
+			"man_pilot": "👨‍✈️",
+			"woman_pilot": "👩‍✈️",
+			"astronaut": "🧑‍🚀",
+			"man_astronaut": "👨‍🚀",
+			"woman_astronaut": "👩‍🚀",
+			"firefighter": "🧑‍🚒",
+			"man_firefighter": "👨‍🚒",
+			"woman_firefighter": "👩‍🚒",
+			"police_officer": "👮",
+			"cop": "👮",
+			"policeman": "👮‍♂️",
+			"policewoman": "👮‍♀️",
+			"detective": "🕵️",
+			"male_detective": "🕵️‍♂️",
+			"female_detective": "🕵️‍♀️",
+			"guard": "💂",
+			"guardsman": "💂‍♂️",
+			"guardswoman": "💂‍♀️",
+			"ninja": "🥷",
+			"construction_worker": "👷",
+			"construction_worker_man": "👷‍♂️",
+			"construction_worker_woman": "👷‍♀️",
+			"prince": "🤴",
+			"princess": "👸",
+			"person_with_turban": "👳",
+			"man_with_turban": "👳‍♂️",
+			"woman_with_turban": "👳‍♀️",
+			"man_with_gua_pi_mao": "👲",
+			"woman_with_headscarf": "🧕",
+			"person_in_tuxedo": "🤵",
+			"man_in_tuxedo": "🤵‍♂️",
+			"woman_in_tuxedo": "🤵‍♀️",
+			"person_with_veil": "👰",
+			"man_with_veil": "👰‍♂️",
+			"woman_with_veil": "👰‍♀️",
+			"bride_with_veil": "👰‍♀️",
+			"pregnant_woman": "🤰",
+			"breast_feeding": "🤱",
+			"woman_feeding_baby": "👩‍🍼",
+			"man_feeding_baby": "👨‍🍼",
+			"person_feeding_baby": "🧑‍🍼",
+</body>
+</html>
+	`;
+}
+
+export function deactivate() { }

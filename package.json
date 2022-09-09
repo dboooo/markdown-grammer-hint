@@ -10,16 +10,26 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:markdow-grammer-hint.helloWorld"
+    "onCommand:MGH"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "markdow-grammer-hint.helloWorld",
-        "title": "Hello World"
+        "command": "MGH",
+        "title": "markdown-grammer-hint",
+        "category": "markdown-grammer-hint"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "MGH",
+          "group": "1_modification",
+          "when": "explorerResourceIsFolder"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",

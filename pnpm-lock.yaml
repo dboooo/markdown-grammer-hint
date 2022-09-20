@@ -10,6 +10,7 @@ specifiers:
   '@vscode/test-electron': ^2.1.5
   eslint: ^8.20.0
   glob: ^8.0.3
+  json-templater: ^1.2.0
   mocha: ^10.0.0
   typescript: ^4.7.4
 
@@ -23,6 +24,7 @@ devDependencies:
   '@vscode/test-electron': 2.1.5
   eslint: 8.23.0
   glob: 8.0.3
+  json-templater: 1.2.0
   mocha: 10.0.0
   typescript: 4.8.3
 
@@ -942,6 +944,10 @@ packages:
 
   /json-stable-stringify-without-jsonify/1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
+    dev: true
+
+  /json-templater/1.2.0:
+    resolution: {integrity: sha512-u2l5PGQuLs6eoeAW6z7LOgyk17d7v4LutnO630ZQt1Nw9XxzepU4vD1HDlYV45d0aR3tBek4AK6GYWbEI0nhOQ==}
     dev: true
 
   /levn/0.4.1:

@@ -1,5 +1,10 @@
-# markdow-grammer-hint README
+# Markdow-Grammer-Hint
+give you the markdown grammer hint and some emoji
 
-## To Do
-1. 样式问题
-2. emoji
+## Usage
+After Install, just click your right mouse button and choose markdow grammer hint command in the table
+
+so, you can follow the right side info to write markdow 😃
+## Preview
+![](main1.png)
+![](main2.png)

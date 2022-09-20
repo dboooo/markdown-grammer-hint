@@ -2,33 +2,40 @@
   "name": "markdow-grammer-hint",
   "displayName": "markdow-grammer-hint",
   "description": "A grammer hint for markdown beginer",
-  "publisher": "dboo",
+  "publisher": "dboooo",
   "version": "0.0.1",
   "repository": "https://github.com/dboooo/markdown-grammer-hint",
   "engines": {
     "vscode": "^1.71.0"
   },
+  "keywords": [
+    "markdown",
+    "grammer",
+    "lint",
+    "grammer lint"
+  ],
+  "license": "MIT",
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:MGH"
+    "onCommand:mark.hint"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "MGH",
-        "title": "markdown-grammer-hint",
-        "category": "markdown-grammer-hint"
+        "command": "mark.hint",
+        "title": "markdown hint",
+        "category": "Markdown"
       }
     ],
     "menus": {
-      "explorer/context": [
+      "editor/context": [
         {
-          "command": "MGH",
-          "group": "1_modification",
-          "when": "explorerResourceIsFolder"
+          "when": "editorLangId == markdown",
+          "command": "mark.hint",
+          "group": "navigation"
         }
       ]
     }
@@ -42,16 +49,17 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.71.0",
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.1.1",
     "@types/node": "16.x",
+    "@types/vscode": "^1.71.0",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
+    "@vscode/test-electron": "^2.1.5",
     "eslint": "^8.20.0",
     "glob": "^8.0.3",
+    "json-templater": "^1.2.0",
     "mocha": "^10.0.0",
-    "typescript": "^4.7.4",
-    "@vscode/test-electron": "^2.1.5"
+    "typescript": "^4.7.4"
   }
 }

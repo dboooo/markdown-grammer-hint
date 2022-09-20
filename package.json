@@ -2,8 +2,8 @@
   "name": "markdow-grammer-hint",
   "displayName": "markdow-grammer-hint",
   "description": "A grammer hint for markdown beginer",
-  "publisher": "dboooo",
-  "version": "0.0.1",
+  "publisher": "dboo",
+  "version": "0.0.2",
   "repository": "https://github.com/dboooo/markdown-grammer-hint",
   "engines": {
     "vscode": "^1.71.0"

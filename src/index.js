@@ -6,8 +6,10 @@ var render = require('json-templater/string')
 const OUTPUT_PATH = path.join(process.cwd(), './src/index.html')
 let emoji
 let arr = []
+let count = 0
+let tr = 0
 let TEMPLATE_ITEM = `
-  <h3>{{value}}</h3>
+  <td>{{value}}</td>
 `
 
 emoji = JSON.parse(
@@ -16,8 +18,14 @@ emoji = JSON.parse(
   })
 )
 for (const key in emoji) {
+  if (count % 8 === 0) {
+    arr.push('</tr><tr>')
+  }
   arr.push(render(TEMPLATE_ITEM, { value: `${emoji[key]}` }))
+  count++
 }
+arr[0] = '<tr>'
+arr.push('</tr>')
 var template = arr.join(' ')
 fs.writeFileSync(OUTPUT_PATH, template)
 console.log('over!!!')

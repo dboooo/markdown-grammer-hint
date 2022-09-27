@@ -27,15 +27,15 @@ function getWebviewContent() {
     <title>Document</title>
     <style>
         .emoji tr {
-            letter-spacing: 0.75rem;
-            font-size: 2rem;
+            letter-spacing: 0.25rem;
+            font-size: 1.5rem;
         }
         .content tr {
-            font-size: 1.25rem;
+            font-size: 1rem;
             border: 1px solid #ccc;
         }
         .content td {
-            padding: 15px;
+            padding: 10px;
         }
         table {
             border-collapse: collapse;
@@ -85,9 +85,7 @@ function getWebviewContent() {
 		</tr>
         </tbody></table></div>
         <table class="emoji">
-        <thead>
-            emoji😆
-        </thead>
+        <tr> 
         <tr> 
         <td>💯</td>
        
@@ -96,7 +94,7 @@ function getWebviewContent() {
         <td>😀</td>
        
         <td>😃</td>
-       
+       </tr><tr> 
         <td>😄</td>
        
         <td>😁</td>
@@ -112,7 +110,7 @@ function getWebviewContent() {
         <td>😂</td>
        
         <td>🙂</td>
-       
+       </tr><tr> 
         <td>🙃</td>
        
         <td>😉</td>
@@ -128,19 +126,15 @@ function getWebviewContent() {
         <td>🤩</td>
        
         <td>😘</td>
-       
+       </tr><tr> 
         <td>😗</td>
-       
-        <td>☺️</td>
        
         <td>😚</td>
        
         <td>😙</td>
-       </tr><tr> 
-        <td>🥲</td>
        
         <td>😋</td>
-       
+       </tr><tr> 
         <td>😛</td>
        
         <td>😜</td>
@@ -148,15 +142,15 @@ function getWebviewContent() {
         <td>🤪</td>
        
         <td>😝</td>
-       
+       </tr><tr> 
         <td>🤑</td>
        
         <td>🤗</td>
-       </tr><tr> 
+       
         <td>🤭</td>
        
         <td>🤫</td>
-       
+       </tr><tr> 
         <td>🤔</td>
        
         <td>🤐</td>
@@ -164,15 +158,15 @@ function getWebviewContent() {
         <td>🤨</td>
        
         <td>😐</td>
-       
+       </tr><tr> 
         <td>😑</td>
        
         <td>😶</td>
-       </tr><tr> 
+       
         <td>😏</td>
        
         <td>😒</td>
-       
+       </tr><tr> 
         <td>🙄</td>
        
         <td>😬</td>
@@ -180,15 +174,15 @@ function getWebviewContent() {
         <td>🤥</td>
        
         <td>😌</td>
-       
+       </tr><tr> 
         <td>😔</td>
        
         <td>😪</td>
-       </tr><tr> 
+       
         <td>🤤</td>
        
         <td>😴</td>
-       
+       </tr><tr> 
         <td>😷</td>
        
         <td>🤒</td>
@@ -196,15 +190,15 @@ function getWebviewContent() {
         <td>🤕</td>
        
         <td>🤢</td>
-       
+       </tr><tr> 
         <td>🤮</td>
        
         <td>🤧</td>
-       </tr><tr> 
+       
         <td>🥵</td>
        
         <td>🥶</td>
-       
+       </tr><tr> 
         <td>🥴</td>
        
         <td>😵</td>
@@ -212,17 +206,15 @@ function getWebviewContent() {
         <td>🤯</td>
        
         <td>🤠</td>
-       
+       </tr><tr> 
         <td>🥳</td>
        
-        <td>🥸</td>
-       </tr><tr> 
         <td>😎</td>
        
         <td>🤓</td>
        
         <td>🧐</td>
-       
+       </tr><tr> 
         <td>😕</td>
        
         <td>😟</td>
@@ -230,15 +222,15 @@ function getWebviewContent() {
         <td>🙁</td>
        
         <td>☹️</td>
-       
-        <td>😮</td>
        </tr><tr> 
+        <td>😮</td>
+       
         <td>😯</td>
        
         <td>😲</td>
        
         <td>😳</td>
-       
+       </tr><tr> 
         <td>🥺</td>
        
         <td>😦</td>
@@ -246,15 +238,15 @@ function getWebviewContent() {
         <td>😧</td>
        
         <td>😨</td>
-       
-        <td>😰</td>
        </tr><tr> 
+        <td>😰</td>
+       
         <td>😥</td>
        
         <td>😢</td>
        
         <td>😭</td>
-       
+       </tr><tr> 
         <td>😱</td>
        
         <td>😖</td>
@@ -262,15 +254,15 @@ function getWebviewContent() {
         <td>😣</td>
        
         <td>😞</td>
-       
-        <td>😓</td>
        </tr><tr> 
+        <td>😓</td>
+       
         <td>😩</td>
        
         <td>😫</td>
        
         <td>🥱</td>
-       
+       </tr><tr> 
         <td>😤</td>
        
         <td>😡</td>
@@ -278,15 +270,15 @@ function getWebviewContent() {
         <td>😡</td>
        
         <td>😠</td>
-       
-        <td>🤬</td>
        </tr><tr> 
+        <td>🤬</td>
+       
         <td>😈</td>
        
         <td>👿</td>
        
         <td>💀</td>
-       
+       </tr><tr> 
         <td>☠️</td>
        
         <td>💩</td>
@@ -294,15 +286,15 @@ function getWebviewContent() {
         <td>💩</td>
        
         <td>💩</td>
-       
-        <td>🤡</td>
        </tr><tr> 
+        <td>🤡</td>
+       
         <td>👹</td>
        
         <td>👺</td>
        
         <td>👻</td>
-       
+       </tr><tr> 
         <td>👽</td>
        
         <td>👾</td>
@@ -310,15 +302,15 @@ function getWebviewContent() {
         <td>🤖</td>
        
         <td>😺</td>
-       
-        <td>😸</td>
        </tr><tr> 
+        <td>😸</td>
+       
         <td>😹</td>
        
         <td>😻</td>
        
         <td>😼</td>
-       
+       </tr><tr> 
         <td>😽</td>
        
         <td>🙀</td>
@@ -326,15 +318,15 @@ function getWebviewContent() {
         <td>😿</td>
        
         <td>😾</td>
-       
-        <td>🙈</td>
        </tr><tr> 
+        <td>🙈</td>
+       
         <td>🙉</td>
        
         <td>🙊</td>
        
         <td>💋</td>
-       
+       </tr><tr> 
         <td>💌</td>
        
         <td>💘</td>
@@ -342,15 +334,15 @@ function getWebviewContent() {
         <td>💝</td>
        
         <td>💖</td>
-       
-        <td>💗</td>
        </tr><tr> 
+        <td>💗</td>
+       
         <td>💓</td>
        
         <td>💞</td>
        
         <td>💕</td>
-       
+       </tr><tr> 
         <td>💟</td>
        
         <td>❣️</td>
@@ -358,15 +350,15 @@ function getWebviewContent() {
         <td>💔</td>
        
         <td>❤️</td>
-       
-        <td>🧡</td>
        </tr><tr> 
+        <td>🧡</td>
+       
         <td>💛</td>
        
         <td>💚</td>
        
         <td>💙</td>
-       
+       </tr><tr> 
         <td>💜</td>
        
         <td>🤎</td>
@@ -374,15 +366,15 @@ function getWebviewContent() {
         <td>🖤</td>
        
         <td>🤍</td>
-       
-        <td>💢</td>
        </tr><tr> 
+        <td>💢</td>
+       
         <td>💥</td>
        
         <td>💥</td>
        
         <td>💫</td>
-       
+       </tr><tr> 
         <td>💦</td>
        
         <td>💨</td>
@@ -390,15 +382,15 @@ function getWebviewContent() {
         <td>🕳️</td>
        
         <td>💣</td>
-       
-        <td>💬</td>
        </tr><tr> 
+        <td>💬</td>
+       
         <td>👁️‍🗨️</td>
        
         <td>🗨️</td>
        
         <td>🗯️</td>
-       
+       </tr><tr> 
         <td>💭</td>
        
         <td>💤</td>
@@ -406,15 +398,15 @@ function getWebviewContent() {
         <td>👋</td>
        
         <td>🤚</td>
-       
-        <td>🖐️</td>
        </tr><tr> 
+        <td>🖐️</td>
+       
         <td>✋</td>
        
         <td>✋</td>
        
         <td>🖖</td>
-       
+       </tr><tr> 
         <td>👌</td>
        
         <td>🤌</td>
@@ -422,15 +414,15 @@ function getWebviewContent() {
         <td>🤏</td>
        
         <td>✌️</td>
-       
-        <td>🤞</td>
        </tr><tr> 
+        <td>🤞</td>
+       
         <td>🤟</td>
        
         <td>🤘</td>
        
         <td>🤙</td>
-       
+       </tr><tr> 
         <td>👈</td>
        
         <td>👉</td>
@@ -438,15 +430,15 @@ function getWebviewContent() {
         <td>👆</td>
        
         <td>🖕</td>
-       
-        <td>🖕</td>
        </tr><tr> 
+        <td>🖕</td>
+       
         <td>👇</td>
        
         <td>☝️</td>
        
         <td>👍</td>
-       
+       </tr><tr> 
         <td>👍</td>
        
         <td>👎</td>
@@ -454,15 +446,15 @@ function getWebviewContent() {
         <td>👎</td>
        
         <td>✊</td>
-       
-        <td>✊</td>
        </tr><tr> 
-        <td>👊</td>
+        <td>✊</td>
        
         <td>👊</td>
        
         <td>👊</td>
        
+        <td>👊</td>
+       </tr><tr> 
         <td>🤛</td>
        
         <td>🤜</td>
@@ -470,15 +462,15 @@ function getWebviewContent() {
         <td>👏</td>
        
         <td>🙌</td>
-       
-        <td>👐</td>
        </tr><tr> 
+        <td>👐</td>
+       
         <td>🤲</td>
        
         <td>🤝</td>
        
         <td>🙏</td>
-       
+       </tr><tr> 
         <td>✍️</td>
        
         <td>💅</td>
@@ -486,15 +478,15 @@ function getWebviewContent() {
         <td>🤳</td>
        
         <td>💪</td>
-       
-        <td>🦾</td>
        </tr><tr> 
+        <td>🦾</td>
+       
         <td>🦿</td>
        
         <td>🦵</td>
        
         <td>🦶</td>
-       
+       </tr><tr> 
         <td>👂</td>
        
         <td>🦻</td>
@@ -502,15 +494,15 @@ function getWebviewContent() {
         <td>👃</td>
        
         <td>🧠</td>
-       
-        <td>🫀</td>
        </tr><tr> 
+        <td>🫀</td>
+       
         <td>🫁</td>
        
         <td>🦷</td>
        
         <td>🦴</td>
-       
+       </tr><tr> 
         <td>👀</td>
        
         <td>👁️</td>
@@ -518,15 +510,15 @@ function getWebviewContent() {
         <td>👅</td>
        
         <td>👄</td>
-       
-        <td>👶</td>
        </tr><tr> 
+        <td>👶</td>
+       
         <td>🧒</td>
        
         <td>👦</td>
        
         <td>👧</td>
-       
+       </tr><tr> 
         <td>🧑</td>
        
         <td>👱</td>
@@ -534,15 +526,15 @@ function getWebviewContent() {
         <td>👨</td>
        
         <td>🧔</td>
-       
-        <td>👨‍🦰</td>
        </tr><tr> 
+        <td>👨‍🦰</td>
+       
         <td>👨‍🦱</td>
        
         <td>👨‍🦳</td>
        
         <td>👨‍🦲</td>
-       
+       </tr><tr> 
         <td>👩</td>
        
         <td>👩‍🦰</td>
@@ -550,15 +542,15 @@ function getWebviewContent() {
         <td>🧑‍🦰</td>
        
         <td>👩‍🦱</td>
-       
-        <td>🧑‍🦱</td>
        </tr><tr> 
+        <td>🧑‍🦱</td>
+       
         <td>👩‍🦳</td>
        
         <td>🧑‍🦳</td>
        
         <td>👩‍🦲</td>
-       
+       </tr><tr> 
         <td>🧑‍🦲</td>
        
         <td>👱‍♀️</td>
@@ -566,15 +558,15 @@ function getWebviewContent() {
         <td>👱‍♀️</td>
        
         <td>👱‍♂️</td>
-       
-        <td>🧓</td>
        </tr><tr> 
+        <td>🧓</td>
+       
         <td>👴</td>
        
         <td>👵</td>
        
         <td>🙍</td>
-       
+       </tr><tr> 
         <td>🙍‍♂️</td>
        
         <td>🙍‍♀️</td>
@@ -582,15 +574,15 @@ function getWebviewContent() {
         <td>🙎</td>
        
         <td>🙎‍♂️</td>
-       
-        <td>🙎‍♀️</td>
        </tr><tr> 
+        <td>🙎‍♀️</td>
+       
         <td>🙅</td>
        
         <td>🙅‍♂️</td>
        
         <td>🙅‍♂️</td>
-       
+       </tr><tr> 
         <td>🙅‍♀️</td>
        
         <td>🙅‍♀️</td>
@@ -598,15 +590,15 @@ function getWebviewContent() {
         <td>🙆</td>
        
         <td>🙆‍♂️</td>
-       
-        <td>🙆‍♀️</td>
        </tr><tr> 
+        <td>🙆‍♀️</td>
+       
         <td>💁</td>
        
         <td>💁</td>
        
         <td>💁‍♂️</td>
-       
+       </tr><tr> 
         <td>💁‍♂️</td>
        
         <td>💁‍♀️</td>
@@ -614,15 +606,15 @@ function getWebviewContent() {
         <td>💁‍♀️</td>
        
         <td>🙋</td>
-       
-        <td>🙋‍♂️</td>
        </tr><tr> 
+        <td>🙋‍♂️</td>
+       
         <td>🙋‍♀️</td>
        
         <td>🧏</td>
        
         <td>🧏‍♂️</td>
-       
+       </tr><tr> 
         <td>🧏‍♀️</td>
        
         <td>🙇</td>
@@ -630,15 +622,15 @@ function getWebviewContent() {
         <td>🙇‍♂️</td>
        
         <td>🙇‍♀️</td>
-       
-        <td>🤦</td>
        </tr><tr> 
+        <td>🤦</td>
+       
         <td>🤦‍♂️</td>
        
         <td>🤦‍♀️</td>
        
         <td>🤷</td>
-       
+       </tr><tr> 
         <td>🤷‍♂️</td>
        
         <td>🤷‍♀️</td>
@@ -646,15 +638,15 @@ function getWebviewContent() {
         <td>🧑‍⚕️</td>
        
         <td>👨‍⚕️</td>
-       
-        <td>👩‍⚕️</td>
        </tr><tr> 
+        <td>👩‍⚕️</td>
+       
         <td>🧑‍🎓</td>
        
         <td>👨‍🎓</td>
        
         <td>👩‍🎓</td>
-       
+       </tr><tr> 
         <td>🧑‍🏫</td>
        
         <td>👨‍🏫</td>
@@ -662,15 +654,15 @@ function getWebviewContent() {
         <td>👩‍🏫</td>
        
         <td>🧑‍⚖️</td>
-       
-        <td>👨‍⚖️</td>
        </tr><tr> 
+        <td>👨‍⚖️</td>
+       
         <td>👩‍⚖️</td>
        
         <td>🧑‍🌾</td>
        
         <td>👨‍🌾</td>
-       
+       </tr><tr> 
         <td>👩‍🌾</td>
        
         <td>🧑‍🍳</td>
@@ -678,15 +670,15 @@ function getWebviewContent() {
         <td>👨‍🍳</td>
        
         <td>👩‍🍳</td>
-       
-        <td>🧑‍🔧</td>
        </tr><tr> 
+        <td>🧑‍🔧</td>
+       
         <td>👨‍🔧</td>
        
         <td>👩‍🔧</td>
        
         <td>🧑‍🏭</td>
-       
+       </tr><tr> 
         <td>👨‍🏭</td>
        
         <td>👩‍🏭</td>
@@ -694,15 +686,15 @@ function getWebviewContent() {
         <td>🧑‍💼</td>
        
         <td>👨‍💼</td>
-       
-        <td>👩‍💼</td>
        </tr><tr> 
+        <td>👩‍💼</td>
+       
         <td>🧑‍🔬</td>
        
         <td>👨‍🔬</td>
        
         <td>👩‍🔬</td>
-       
+       </tr><tr> 
         <td>🧑‍💻</td>
        
         <td>👨‍💻</td>
@@ -710,15 +702,15 @@ function getWebviewContent() {
         <td>👩‍💻</td>
        
         <td>🧑‍🎤</td>
-       
-        <td>👨‍🎤</td>
        </tr><tr> 
+        <td>👨‍🎤</td>
+       
         <td>👩‍🎤</td>
        
         <td>🧑‍🎨</td>
        
         <td>👨‍🎨</td>
-       
+       </tr><tr> 
         <td>👩‍🎨</td>
        
         <td>🧑‍✈️</td>
@@ -726,15 +718,15 @@ function getWebviewContent() {
         <td>👨‍✈️</td>
        
         <td>👩‍✈️</td>
-       
-        <td>🧑‍🚀</td>
        </tr><tr> 
+        <td>🧑‍🚀</td>
+       
         <td>👨‍🚀</td>
        
         <td>👩‍🚀</td>
        
         <td>🧑‍🚒</td>
-       
+       </tr><tr> 
         <td>👨‍🚒</td>
        
         <td>👩‍🚒</td>
@@ -742,15 +734,15 @@ function getWebviewContent() {
         <td>👮</td>
        
         <td>👮</td>
-       
-        <td>👮‍♂️</td>
        </tr><tr> 
+        <td>👮‍♂️</td>
+       
         <td>👮‍♀️</td>
        
         <td>🕵️</td>
        
         <td>🕵️‍♂️</td>
-       
+       </tr><tr> 
         <td>🕵️‍♀️</td>
        
         <td>💂</td>
@@ -758,8 +750,6 @@ function getWebviewContent() {
         <td>💂‍♂️</td>
        
         <td>💂‍♀️</td>
-       
-        <td>🥷</td>
        </tr><tr> 
         <td>👷</td>
        
@@ -768,7 +758,7 @@ function getWebviewContent() {
         <td>👷‍♀️</td>
        
         <td>🤴</td>
-       
+       </tr><tr> 
         <td>👸</td>
        
         <td>👳</td>
@@ -784,7 +774,7 @@ function getWebviewContent() {
         <td>🤵</td>
        
         <td>🤵‍♂️</td>
-       
+       </tr><tr> 
         <td>🤵‍♀️</td>
        
         <td>👰</td>
@@ -800,7 +790,7 @@ function getWebviewContent() {
         <td>🤱</td>
        
         <td>👩‍🍼</td>
-       
+       </tr><tr> 
         <td>👨‍🍼</td>
        
         <td>🧑‍🍼</td>
@@ -816,7 +806,7 @@ function getWebviewContent() {
         <td>🦸</td>
        
         <td>🦸‍♂️</td>
-       
+       </tr><tr> 
         <td>🦸‍♀️</td>
        
         <td>🦹</td>
@@ -832,7 +822,7 @@ function getWebviewContent() {
         <td>🧙‍♀️</td>
        
         <td>🧚</td>
-       
+       </tr><tr> 
         <td>🧚‍♂️</td>
        
         <td>🧚‍♀️</td>
@@ -848,7 +838,7 @@ function getWebviewContent() {
         <td>🧜‍♂️</td>
        
         <td>🧜‍♀️</td>
-       
+       </tr><tr> 
         <td>🧝</td>
        
         <td>🧝‍♂️</td>
@@ -864,7 +854,7 @@ function getWebviewContent() {
         <td>🧟</td>
        
         <td>🧟‍♂️</td>
-       
+       </tr><tr> 
         <td>🧟‍♀️</td>
        
         <td>💆</td>
@@ -880,7 +870,7 @@ function getWebviewContent() {
         <td>💇‍♀️</td>
        
         <td>🚶</td>
-       
+       </tr><tr> 
         <td>🚶‍♂️</td>
        
         <td>🚶‍♀️</td>
@@ -896,7 +886,7 @@ function getWebviewContent() {
         <td>🧎‍♂️</td>
        
         <td>🧎‍♀️</td>
-       
+       </tr><tr> 
         <td>🧑‍🦯</td>
        
         <td>👨‍🦯</td>
@@ -912,7 +902,7 @@ function getWebviewContent() {
         <td>🧑‍🦽</td>
        
         <td>👨‍🦽</td>
-       
+       </tr><tr> 
         <td>👩‍🦽</td>
        
         <td>🏃</td>
@@ -928,7 +918,7 @@ function getWebviewContent() {
         <td>💃</td>
        
         <td>🕺</td>
-       
+       </tr><tr> 
         <td>🕴️</td>
        
         <td>👯</td>
@@ -944,7 +934,7 @@ function getWebviewContent() {
         <td>🧖‍♀️</td>
        
         <td>🧗</td>
-       
+       </tr><tr> 
         <td>🧗‍♂️</td>
        
         <td>🧗‍♀️</td>
@@ -960,7 +950,7 @@ function getWebviewContent() {
         <td>🏌️</td>
        
         <td>🏌️‍♂️</td>
-       
+       </tr><tr> 
         <td>🏌️‍♀️</td>
        
         <td>🏄</td>
@@ -976,7 +966,7 @@ function getWebviewContent() {
         <td>🚣‍♀️</td>
        
         <td>🏊</td>
-       
+       </tr><tr> 
         <td>🏊‍♂️</td>
        
         <td>🏊‍♀️</td>
@@ -992,7 +982,7 @@ function getWebviewContent() {
         <td>⛹️‍♀️</td>
        
         <td>🏋️</td>
-       
+       </tr><tr> 
         <td>🏋️‍♂️</td>
        
         <td>🏋️‍♀️</td>
@@ -1008,7 +998,7 @@ function getWebviewContent() {
         <td>🚵‍♂️</td>
        
         <td>🚵‍♀️</td>
-       
+       </tr><tr> 
         <td>🤸</td>
        
         <td>🤸‍♂️</td>
@@ -1024,7 +1014,7 @@ function getWebviewContent() {
         <td>🤽</td>
        
         <td>🤽‍♂️</td>
-       
+       </tr><tr> 
         <td>🤽‍♀️</td>
        
         <td>🤾</td>
@@ -1040,7 +1030,7 @@ function getWebviewContent() {
         <td>🤹‍♀️</td>
        
         <td>🧘</td>
-       
+       </tr><tr> 
         <td>🧘‍♂️</td>
        
         <td>🧘‍♀️</td>
@@ -1056,7 +1046,7 @@ function getWebviewContent() {
         <td>👫</td>
        
         <td>👬</td>
-       
+       </tr><tr> 
         <td>💏</td>
        
         <td>👩‍❤️‍💋‍👨</td>
@@ -1072,7 +1062,7 @@ function getWebviewContent() {
         <td>👨‍❤️‍👨</td>
        
         <td>👩‍❤️‍👩</td>
-       
+       </tr><tr> 
         <td>👪</td>
        
         <td>👨‍👩‍👦</td>
@@ -1088,7 +1078,7 @@ function getWebviewContent() {
         <td>👨‍👨‍👦</td>
        
         <td>👨‍👨‍👧</td>
-       
+       </tr><tr> 
         <td>👨‍👨‍👧‍👦</td>
        
         <td>👨‍👨‍👦‍👦</td>
@@ -1104,7 +1094,7 @@ function getWebviewContent() {
         <td>👩‍👩‍👦‍👦</td>
        
         <td>👩‍👩‍👧‍👧</td>
-       
+       </tr><tr> 
         <td>👨‍👦</td>
        
         <td>👨‍👦‍👦</td>
@@ -1120,7 +1110,7 @@ function getWebviewContent() {
         <td>👩‍👦‍👦</td>
        
         <td>👩‍👧</td>
-       
+       </tr><tr> 
         <td>👩‍👧‍👦</td>
        
         <td>👩‍👧‍👧</td>
@@ -1136,7 +1126,7 @@ function getWebviewContent() {
         <td>👣</td>
        
         <td>🐵</td>
-       
+       </tr><tr> 
         <td>🐒</td>
        
         <td>🦍</td>
@@ -1152,7 +1142,7 @@ function getWebviewContent() {
         <td>🐕‍🦺</td>
        
         <td>🐩</td>
-       
+       </tr><tr> 
         <td>🐺</td>
        
         <td>🦊</td>
@@ -1168,7 +1158,7 @@ function getWebviewContent() {
         <td>🦁</td>
        
         <td>🐯</td>
-       
+       </tr><tr> 
         <td>🐅</td>
        
         <td>🐆</td>
@@ -1184,7 +1174,7 @@ function getWebviewContent() {
         <td>🦌</td>
        
         <td>🦬</td>
-       
+       </tr><tr> 
         <td>🐮</td>
        
         <td>🐂</td>
@@ -1200,7 +1190,7 @@ function getWebviewContent() {
         <td>🐗</td>
        
         <td>🐽</td>
-       
+       </tr><tr> 
         <td>🐏</td>
        
         <td>🐑</td>
@@ -1216,7 +1206,7 @@ function getWebviewContent() {
         <td>🦒</td>
        
         <td>🐘</td>
-       
+       </tr><tr> 
         <td>🦣</td>
        
         <td>🦏</td>
@@ -1232,7 +1222,7 @@ function getWebviewContent() {
         <td>🐹</td>
        
         <td>🐰</td>
-       
+       </tr><tr> 
         <td>🐇</td>
        
         <td>🐿️</td>
@@ -1248,7 +1238,7 @@ function getWebviewContent() {
         <td>🐻‍❄️</td>
        
         <td>🐨</td>
-       
+       </tr><tr> 
         <td>🐼</td>
        
         <td>🦥</td>
@@ -1264,7 +1254,7 @@ function getWebviewContent() {
         <td>🐾</td>
        
         <td>🐾</td>
-       
+       </tr><tr> 
         <td>🦃</td>
        
         <td>🐔</td>
@@ -1280,7 +1270,7 @@ function getWebviewContent() {
         <td>🐦</td>
        
         <td>🐧</td>
-       
+       </tr><tr> 
         <td>🕊️</td>
        
         <td>🦅</td>
@@ -1296,7 +1286,7 @@ function getWebviewContent() {
         <td>🪶</td>
        
         <td>🦩</td>
-       
+       </tr><tr> 
         <td>🦚</td>
        
         <td>🦜</td>
@@ -1312,7 +1302,7 @@ function getWebviewContent() {
         <td>🐍</td>
        
         <td>🐲</td>
-       
+       </tr><tr> 
         <td>🐉</td>
        
         <td>🦕</td>
@@ -1328,7 +1318,7 @@ function getWebviewContent() {
         <td>🐬</td>
        
         <td>🦭</td>
-       
+       </tr><tr> 
         <td>🐟</td>
        
         <td>🐠</td>
@@ -1344,7 +1334,7 @@ function getWebviewContent() {
         <td>🐌</td>
        
         <td>🦋</td>
-       
+       </tr><tr> 
         <td>🐛</td>
        
         <td>🐜</td>
@@ -1360,7 +1350,7 @@ function getWebviewContent() {
         <td>🦗</td>
        
         <td>🪳</td>
-       
+       </tr><tr> 
         <td>🕷️</td>
        
         <td>🕸️</td>
@@ -1376,7 +1366,7 @@ function getWebviewContent() {
         <td>🦠</td>
        
         <td>💐</td>
-       
+       </tr><tr> 
         <td>🌸</td>
        
         <td>💮</td>
@@ -1392,7 +1382,7 @@ function getWebviewContent() {
         <td>🌻</td>
        
         <td>🌼</td>
-       
+       </tr><tr> 
         <td>🌷</td>
        
         <td>🌱</td>
@@ -1408,7 +1398,7 @@ function getWebviewContent() {
         <td>🌵</td>
        
         <td>🌾</td>
-       
+       </tr><tr> 
         <td>🌿</td>
        
         <td>☘️</td>
@@ -1424,7 +1414,7 @@ function getWebviewContent() {
         <td>🍇</td>
        
         <td>🍈</td>
-       
+       </tr><tr> 
         <td>🍉</td>
        
         <td>🍊</td>
@@ -1440,7 +1430,7 @@ function getWebviewContent() {
         <td>🍍</td>
        
         <td>🥭</td>
-       
+       </tr><tr> 
         <td>🍎</td>
        
         <td>🍏</td>
@@ -1456,7 +1446,7 @@ function getWebviewContent() {
         <td>🫐</td>
        
         <td>🥝</td>
-       
+       </tr><tr> 
         <td>🍅</td>
        
         <td>🫒</td>
@@ -1472,7 +1462,7 @@ function getWebviewContent() {
         <td>🥕</td>
        
         <td>🌽</td>
-       
+       </tr><tr> 
         <td>🌶️</td>
        
         <td>🫑</td>
@@ -1488,7 +1478,7 @@ function getWebviewContent() {
         <td>🧅</td>
        
         <td>🍄</td>
-       
+       </tr><tr> 
         <td>🥜</td>
        
         <td>🌰</td>
@@ -1504,7 +1494,7 @@ function getWebviewContent() {
         <td>🥨</td>
        
         <td>🥯</td>
-       
+       </tr><tr> 
         <td>🥞</td>
        
         <td>🧇</td>
@@ -1520,7 +1510,7 @@ function getWebviewContent() {
         <td>🥓</td>
        
         <td>🍔</td>
-       
+       </tr><tr> 
         <td>🍟</td>
        
         <td>🍕</td>
@@ -1536,7 +1526,7 @@ function getWebviewContent() {
         <td>🫔</td>
        
         <td>🥙</td>
-       
+       </tr><tr> 
         <td>🧆</td>
        
         <td>🥚</td>
@@ -1552,7 +1542,7 @@ function getWebviewContent() {
         <td>🥣</td>
        
         <td>🥗</td>
-       
+       </tr><tr> 
         <td>🍿</td>
        
         <td>🧈</td>
@@ -1568,7 +1558,7 @@ function getWebviewContent() {
         <td>🍙</td>
        
         <td>🍚</td>
-       
+       </tr><tr> 
         <td>🍛</td>
        
         <td>🍜</td>
@@ -1584,7 +1574,7 @@ function getWebviewContent() {
         <td>🍤</td>
        
         <td>🍥</td>
-       
+       </tr><tr> 
         <td>🥮</td>
        
         <td>🍡</td>
@@ -1600,7 +1590,7 @@ function getWebviewContent() {
         <td>🦞</td>
        
         <td>🦐</td>
-       
+       </tr><tr> 
         <td>🦑</td>
        
         <td>🦪</td>
@@ -1616,7 +1606,7 @@ function getWebviewContent() {
         <td>🍪</td>
        
         <td>🎂</td>
-       
+       </tr><tr> 
         <td>🍰</td>
        
         <td>🧁</td>
@@ -1632,7 +1622,7 @@ function getWebviewContent() {
         <td>🍮</td>
        
         <td>🍯</td>
-       
+       </tr><tr> 
         <td>🍼</td>
        
         <td>🥛</td>
@@ -1648,7 +1638,7 @@ function getWebviewContent() {
         <td>🍾</td>
        
         <td>🍷</td>
-       
+       </tr><tr> 
         <td>🍸</td>
        
         <td>🍹</td>
@@ -1664,7 +1654,7 @@ function getWebviewContent() {
         <td>🥤</td>
        
         <td>🧋</td>
-       
+       </tr><tr> 
         <td>🧃</td>
        
         <td>🧉</td>
@@ -1680,7 +1670,7 @@ function getWebviewContent() {
         <td>🥄</td>
        
         <td>🔪</td>
-       
+       </tr><tr> 
         <td>🔪</td>
        
         <td>🏺</td>
@@ -1696,7 +1686,7 @@ function getWebviewContent() {
         <td>🗺️</td>
        
         <td>🗾</td>
-       
+       </tr><tr> 
         <td>🧭</td>
        
         <td>🏔️</td>
@@ -1712,7 +1702,7 @@ function getWebviewContent() {
         <td>🏖️</td>
        
         <td>🏜️</td>
-       
+       </tr><tr> 
         <td>🏝️</td>
        
         <td>🏞️</td>
@@ -1728,7 +1718,7 @@ function getWebviewContent() {
         <td>🪨</td>
        
         <td>🪵</td>
-       
+       </tr><tr> 
         <td>🛖</td>
        
         <td>🏘️</td>
@@ -1744,7 +1734,7 @@ function getWebviewContent() {
         <td>🏣</td>
        
         <td>🏤</td>
-       
+       </tr><tr> 
         <td>🏥</td>
        
         <td>🏦</td>
@@ -1760,7 +1750,7 @@ function getWebviewContent() {
         <td>🏬</td>
        
         <td>🏭</td>
-       
+       </tr><tr> 
         <td>🏯</td>
        
         <td>🏰</td>
@@ -1776,7 +1766,7 @@ function getWebviewContent() {
         <td>🕌</td>
        
         <td>🛕</td>
-       
+       </tr><tr> 
         <td>🕍</td>
        
         <td>⛩️</td>
@@ -1792,7 +1782,7 @@ function getWebviewContent() {
         <td>🌃</td>
        
         <td>🏙️</td>
-       
+       </tr><tr> 
         <td>🌄</td>
        
         <td>🌅</td>
@@ -1808,7 +1798,7 @@ function getWebviewContent() {
         <td>🎠</td>
        
         <td>🎡</td>
-       
+       </tr><tr> 
         <td>🎢</td>
        
         <td>💈</td>
@@ -1824,7 +1814,7 @@ function getWebviewContent() {
         <td>🚅</td>
        
         <td>🚆</td>
-       
+       </tr><tr> 
         <td>🚇</td>
        
         <td>🚈</td>
@@ -1840,7 +1830,7 @@ function getWebviewContent() {
         <td>🚋</td>
        
         <td>🚌</td>
-       
+       </tr><tr> 
         <td>🚍</td>
        
         <td>🚎</td>
@@ -1856,7 +1846,7 @@ function getWebviewContent() {
         <td>🚔</td>
        
         <td>🚕</td>
-       
+       </tr><tr> 
         <td>🚖</td>
        
         <td>🚗</td>
@@ -1872,7 +1862,7 @@ function getWebviewContent() {
         <td>🚚</td>
        
         <td>🚛</td>
-       
+       </tr><tr> 
         <td>🚜</td>
        
         <td>🏎️</td>
@@ -1888,7 +1878,7 @@ function getWebviewContent() {
         <td>🛺</td>
        
         <td>🚲</td>
-       
+       </tr><tr> 
         <td>🛴</td>
        
         <td>🛹</td>
@@ -1904,7 +1894,7 @@ function getWebviewContent() {
         <td>🛢️</td>
        
         <td>⛽</td>
-       
+       </tr><tr> 
         <td>🚨</td>
        
         <td>🚥</td>
@@ -1920,7 +1910,7 @@ function getWebviewContent() {
         <td>⛵</td>
        
         <td>⛵</td>
-       
+       </tr><tr> 
         <td>🛶</td>
        
         <td>🚤</td>
@@ -1936,7 +1926,7 @@ function getWebviewContent() {
         <td>✈️</td>
        
         <td>🛩️</td>
-       
+       </tr><tr> 
         <td>🛫</td>
        
         <td>🛬</td>
@@ -1952,7 +1942,7 @@ function getWebviewContent() {
         <td>🚠</td>
        
         <td>🚡</td>
-       
+       </tr><tr> 
         <td>🛰️</td>
        
         <td>🚀</td>
@@ -1968,7 +1958,7 @@ function getWebviewContent() {
         <td>⏳</td>
        
         <td>⌚</td>
-       
+       </tr><tr> 
         <td>⏰</td>
        
         <td>⏱️</td>
@@ -1984,7 +1974,7 @@ function getWebviewContent() {
         <td>🕐</td>
        
         <td>🕜</td>
-       
+       </tr><tr> 
         <td>🕑</td>
        
         <td>🕝</td>
@@ -2000,7 +1990,7 @@ function getWebviewContent() {
         <td>🕔</td>
        
         <td>🕠</td>
-       
+       </tr><tr> 
         <td>🕕</td>
        
         <td>🕡</td>
@@ -2016,7 +2006,7 @@ function getWebviewContent() {
         <td>🕘</td>
        
         <td>🕤</td>
-       
+       </tr><tr> 
         <td>🕙</td>
        
         <td>🕥</td>
@@ -2032,7 +2022,7 @@ function getWebviewContent() {
         <td>🌓</td>
        
         <td>🌔</td>
-       
+       </tr><tr> 
         <td>🌔</td>
        
         <td>🌕</td>
@@ -2048,7 +2038,7 @@ function getWebviewContent() {
         <td>🌚</td>
        
         <td>🌛</td>
-       
+       </tr><tr> 
         <td>🌜</td>
        
         <td>🌡️</td>
@@ -2064,7 +2054,7 @@ function getWebviewContent() {
         <td>⭐</td>
        
         <td>🌟</td>
-       
+       </tr><tr> 
         <td>🌠</td>
        
         <td>🌌</td>
@@ -2080,7 +2070,7 @@ function getWebviewContent() {
         <td>🌥️</td>
        
         <td>🌦️</td>
-       
+       </tr><tr> 
         <td>🌧️</td>
        
         <td>🌨️</td>
@@ -2096,7 +2086,7 @@ function getWebviewContent() {
         <td>🌀</td>
        
         <td>🌈</td>
-       
+       </tr><tr> 
         <td>🌂</td>
        
         <td>☂️</td>
@@ -2112,7 +2102,7 @@ function getWebviewContent() {
         <td>☃️</td>
        
         <td>⛄</td>
-       
+       </tr><tr> 
         <td>☄️</td>
        
         <td>🔥</td>
@@ -2128,7 +2118,7 @@ function getWebviewContent() {
         <td>🎆</td>
        
         <td>🎇</td>
-       
+       </tr><tr> 
         <td>🧨</td>
        
         <td>✨</td>
@@ -2144,7 +2134,7 @@ function getWebviewContent() {
         <td>🎍</td>
        
         <td>🎎</td>
-       
+       </tr><tr> 
         <td>🎏</td>
        
         <td>🎐</td>
@@ -2160,7 +2150,7 @@ function getWebviewContent() {
         <td>🎗️</td>
        
         <td>🎟️</td>
-       
+       </tr><tr> 
         <td>🎫</td>
        
         <td>🎖️</td>
@@ -2176,7 +2166,7 @@ function getWebviewContent() {
         <td>🥉</td>
        
         <td>⚽</td>
-       
+       </tr><tr> 
         <td>⚾</td>
        
         <td>🥎</td>
@@ -2192,7 +2182,7 @@ function getWebviewContent() {
         <td>🎾</td>
        
         <td>🥏</td>
-       
+       </tr><tr> 
         <td>🎳</td>
        
         <td>🏏</td>
@@ -2208,7 +2198,7 @@ function getWebviewContent() {
         <td>🏸</td>
        
         <td>🥊</td>
-       
+       </tr><tr> 
         <td>🥋</td>
        
         <td>🥅</td>
@@ -2224,7 +2214,7 @@ function getWebviewContent() {
         <td>🎽</td>
        
         <td>🎿</td>
-       
+       </tr><tr> 
         <td>🛷</td>
        
         <td>🥌</td>
@@ -2240,7 +2230,7 @@ function getWebviewContent() {
         <td>🔮</td>
        
         <td>🪄</td>
-       
+       </tr><tr> 
         <td>🧿</td>
        
         <td>🎮</td>
@@ -2256,7 +2246,7 @@ function getWebviewContent() {
         <td>🧸</td>
        
         <td>🪅</td>
-       
+       </tr><tr> 
         <td>🪆</td>
        
         <td>♠️</td>
@@ -2272,7 +2262,7 @@ function getWebviewContent() {
         <td>🃏</td>
        
         <td>🀄</td>
-       
+       </tr><tr> 
         <td>🎴</td>
        
         <td>🎭</td>
@@ -2288,7 +2278,7 @@ function getWebviewContent() {
         <td>🧶</td>
        
         <td>🪢</td>
-       
+       </tr><tr> 
         <td>👓</td>
        
         <td>🕶️</td>
@@ -2304,7 +2294,7 @@ function getWebviewContent() {
         <td>👕</td>
        
         <td>👕</td>
-       
+       </tr><tr> 
         <td>👖</td>
        
         <td>🧣</td>
@@ -2320,7 +2310,7 @@ function getWebviewContent() {
         <td>👘</td>
        
         <td>🥻</td>
-       
+       </tr><tr> 
         <td>🩱</td>
        
         <td>🩲</td>
@@ -2336,7 +2326,7 @@ function getWebviewContent() {
         <td>👜</td>
        
         <td>👝</td>
-       
+       </tr><tr> 
         <td>🛍️</td>
        
         <td>🎒</td>
@@ -2352,7 +2342,7 @@ function getWebviewContent() {
         <td>🥾</td>
        
         <td>🥿</td>
-       
+       </tr><tr> 
         <td>👠</td>
        
         <td>👡</td>
@@ -2368,7 +2358,7 @@ function getWebviewContent() {
         <td>🎩</td>
        
         <td>🎓</td>
-       
+       </tr><tr> 
         <td>🧢</td>
        
         <td>🪖</td>
@@ -2384,7 +2374,7 @@ function getWebviewContent() {
         <td>💎</td>
        
         <td>🔇</td>
-       
+       </tr><tr> 
         <td>🔈</td>
        
         <td>🔉</td>
@@ -2400,7 +2390,7 @@ function getWebviewContent() {
         <td>🔔</td>
        
         <td>🔕</td>
-       
+       </tr><tr> 
         <td>🎼</td>
        
         <td>🎵</td>
@@ -2416,7 +2406,7 @@ function getWebviewContent() {
         <td>🎤</td>
        
         <td>🎧</td>
-       
+       </tr><tr> 
         <td>📻</td>
        
         <td>🎷</td>
@@ -2432,7 +2422,7 @@ function getWebviewContent() {
         <td>🎻</td>
        
         <td>🪕</td>
-       
+       </tr><tr> 
         <td>🥁</td>
        
         <td>🪘</td>
@@ -2448,7 +2438,7 @@ function getWebviewContent() {
         <td>📞</td>
        
         <td>📟</td>
-       
+       </tr><tr> 
         <td>📠</td>
        
         <td>🔋</td>
@@ -2464,7 +2454,7 @@ function getWebviewContent() {
         <td>⌨️</td>
        
         <td>🖱️</td>
-       
+       </tr><tr> 
         <td>🖲️</td>
        
         <td>💽</td>
@@ -2480,7 +2470,7 @@ function getWebviewContent() {
         <td>🎥</td>
        
         <td>🎞️</td>
-       
+       </tr><tr> 
         <td>📽️</td>
        
         <td>🎬</td>
@@ -2496,7 +2486,7 @@ function getWebviewContent() {
         <td>📼</td>
        
         <td>🔍</td>
-       
+       </tr><tr> 
         <td>🔎</td>
        
         <td>🕯️</td>
@@ -2512,7 +2502,7 @@ function getWebviewContent() {
         <td>🪔</td>
        
         <td>📔</td>
-       
+       </tr><tr> 
         <td>📕</td>
        
         <td>📖</td>
@@ -2528,7 +2518,7 @@ function getWebviewContent() {
         <td>📚</td>
        
         <td>📓</td>
-       
+       </tr><tr> 
         <td>📒</td>
        
         <td>📃</td>
@@ -2544,7 +2534,7 @@ function getWebviewContent() {
         <td>📑</td>
        
         <td>🔖</td>
-       
+       </tr><tr> 
         <td>🏷️</td>
        
         <td>💰</td>
@@ -2560,7 +2550,7 @@ function getWebviewContent() {
         <td>💷</td>
        
         <td>💸</td>
-       
+       </tr><tr> 
         <td>💳</td>
        
         <td>🧾</td>
@@ -2576,7 +2566,7 @@ function getWebviewContent() {
         <td>📨</td>
        
         <td>📩</td>
-       
+       </tr><tr> 
         <td>📤</td>
        
         <td>📥</td>
@@ -2592,7 +2582,7 @@ function getWebviewContent() {
         <td>📭</td>
        
         <td>📮</td>
-       
+       </tr><tr> 
         <td>🗳️</td>
        
         <td>✏️</td>
@@ -2608,7 +2598,7 @@ function getWebviewContent() {
         <td>🖍️</td>
        
         <td>📝</td>
-       
+       </tr><tr> 
         <td>📝</td>
        
         <td>💼</td>
@@ -2624,7 +2614,7 @@ function getWebviewContent() {
         <td>📆</td>
        
         <td>🗒️</td>
-       
+       </tr><tr> 
         <td>🗓️</td>
        
         <td>📇</td>
@@ -2640,7 +2630,7 @@ function getWebviewContent() {
         <td>📌</td>
        
         <td>📍</td>
-       
+       </tr><tr> 
         <td>📎</td>
        
         <td>🖇️</td>
@@ -2656,7 +2646,7 @@ function getWebviewContent() {
         <td>🗄️</td>
        
         <td>🗑️</td>
-       
+       </tr><tr> 
         <td>🔒</td>
        
         <td>🔓</td>
@@ -2672,7 +2662,7 @@ function getWebviewContent() {
         <td>🔨</td>
        
         <td>🪓</td>
-       
+       </tr><tr> 
         <td>⛏️</td>
        
         <td>⚒️</td>
@@ -2688,7 +2678,7 @@ function getWebviewContent() {
         <td>🪃</td>
        
         <td>🏹</td>
-       
+       </tr><tr> 
         <td>🛡️</td>
        
         <td>🪚</td>
@@ -2704,7 +2694,7 @@ function getWebviewContent() {
         <td>🗜️</td>
        
         <td>⚖️</td>
-       
+       </tr><tr> 
         <td>🦯</td>
        
         <td>🔗</td>
@@ -2720,7 +2710,7 @@ function getWebviewContent() {
         <td>🪜</td>
        
         <td>⚗️</td>
-       
+       </tr><tr> 
         <td>🧪</td>
        
         <td>🧫</td>
@@ -2736,7 +2726,7 @@ function getWebviewContent() {
         <td>💉</td>
        
         <td>🩸</td>
-       
+       </tr><tr> 
         <td>💊</td>
        
         <td>🩹</td>
@@ -2752,7 +2742,7 @@ function getWebviewContent() {
         <td>🪟</td>
        
         <td>🛏️</td>
-       
+       </tr><tr> 
         <td>🛋️</td>
        
         <td>🪑</td>
@@ -2768,7 +2758,7 @@ function getWebviewContent() {
         <td>🪤</td>
        
         <td>🪒</td>
-       
+       </tr><tr> 
         <td>🧴</td>
        
         <td>🧷</td>
@@ -2784,7 +2774,7 @@ function getWebviewContent() {
         <td>🧼</td>
        
         <td>🪥</td>
-       
+       </tr><tr> 
         <td>🧽</td>
        
         <td>🧯</td>
@@ -2800,7 +2790,7 @@ function getWebviewContent() {
         <td>⚱️</td>
        
         <td>🗿</td>
-       
+       </tr><tr> 
         <td>🪧</td>
        
         <td>🏧</td>
@@ -2816,7 +2806,7 @@ function getWebviewContent() {
         <td>🚺</td>
        
         <td>🚻</td>
-       
+       </tr><tr> 
         <td>🚼</td>
        
         <td>🚾</td>
@@ -2832,7 +2822,7 @@ function getWebviewContent() {
         <td>⚠️</td>
        
         <td>🚸</td>
-       
+       </tr><tr> 
         <td>⛔</td>
        
         <td>🚫</td>
@@ -2848,7 +2838,7 @@ function getWebviewContent() {
         <td>🚷</td>
        
         <td>📵</td>
-       
+       </tr><tr> 
         <td>🔞</td>
        
         <td>☢️</td>
@@ -2864,7 +2854,7 @@ function getWebviewContent() {
         <td>↘️</td>
        
         <td>⬇️</td>
-       
+       </tr><tr> 
         <td>↙️</td>
        
         <td>⬅️</td>
@@ -2880,7 +2870,7 @@ function getWebviewContent() {
         <td>↪️</td>
        
         <td>⤴️</td>
-       
+       </tr><tr> 
         <td>⤵️</td>
        
         <td>🔃</td>
@@ -2896,7 +2886,7 @@ function getWebviewContent() {
         <td>🔜</td>
        
         <td>🔝</td>
-       
+       </tr><tr> 
         <td>🛐</td>
        
         <td>⚛️</td>
@@ -2912,7 +2902,7 @@ function getWebviewContent() {
         <td>✝️</td>
        
         <td>☦️</td>
-       
+       </tr><tr> 
         <td>☪️</td>
        
         <td>☮️</td>
@@ -2928,7 +2918,7 @@ function getWebviewContent() {
         <td>♊</td>
        
         <td>♋</td>
-       
+       </tr><tr> 
         <td>♌</td>
        
         <td>♍</td>
@@ -2944,7 +2934,7 @@ function getWebviewContent() {
         <td>♒</td>
        
         <td>♓</td>
-       
+       </tr><tr> 
         <td>⛎</td>
        
         <td>🔀</td>
@@ -2960,7 +2950,7 @@ function getWebviewContent() {
         <td>⏭️</td>
        
         <td>⏯️</td>
-       
+       </tr><tr> 
         <td>◀️</td>
        
         <td>⏪</td>
@@ -2976,7 +2966,7 @@ function getWebviewContent() {
         <td>⏬</td>
        
         <td>⏸️</td>
-       
+       </tr><tr> 
         <td>⏹️</td>
        
         <td>⏺️</td>
@@ -2992,7 +2982,7 @@ function getWebviewContent() {
         <td>📶</td>
        
         <td>📳</td>
-       
+       </tr><tr> 
         <td>📴</td>
        
         <td>♀️</td>
@@ -3008,7 +2998,7 @@ function getWebviewContent() {
         <td>➖</td>
        
         <td>➗</td>
-       
+       </tr><tr> 
         <td>♾️</td>
        
         <td>‼️</td>
@@ -3024,7 +3014,7 @@ function getWebviewContent() {
         <td>❗</td>
        
         <td>❗</td>
-       
+       </tr><tr> 
         <td>〰️</td>
        
         <td>💱</td>
@@ -3040,7 +3030,7 @@ function getWebviewContent() {
         <td>🔱</td>
        
         <td>📛</td>
-       
+       </tr><tr> 
         <td>🔰</td>
        
         <td>⭕</td>
@@ -3056,7 +3046,7 @@ function getWebviewContent() {
         <td>❎</td>
        
         <td>➰</td>
-       
+       </tr><tr> 
         <td>➿</td>
        
         <td>〽️</td>
@@ -3072,7 +3062,7 @@ function getWebviewContent() {
         <td>®️</td>
        
         <td>™️</td>
-       
+       </tr><tr> 
         <td>#️⃣</td>
        
         <td>*️⃣</td>
@@ -3088,7 +3078,7 @@ function getWebviewContent() {
         <td>4️⃣</td>
        
         <td>5️⃣</td>
-       
+       </tr><tr> 
         <td>6️⃣</td>
        
         <td>7️⃣</td>
@@ -3104,7 +3094,7 @@ function getWebviewContent() {
         <td>🔡</td>
        
         <td>🔣</td>
-       
+       </tr><tr> 
         <td>🔤</td>
        
         <td>🅰️</td>
@@ -3120,7 +3110,7 @@ function getWebviewContent() {
         <td>🆓</td>
        
         <td>ℹ️</td>
-       
+       </tr><tr> 
         <td>🆔</td>
        
         <td>Ⓜ️</td>
@@ -3136,7 +3126,7 @@ function getWebviewContent() {
         <td>🅿️</td>
        
         <td>🆘</td>
-       
+       </tr><tr> 
         <td>🆙</td>
        
         <td>🆚</td>
@@ -3152,7 +3142,7 @@ function getWebviewContent() {
         <td>㊗️</td>
        
         <td>㊙️</td>
-       
+       </tr><tr> 
         <td>🈵</td>
        
         <td>🔴</td>
@@ -3168,7 +3158,7 @@ function getWebviewContent() {
         <td>🟣</td>
        
         <td>🟤</td>
-       
+       </tr><tr> 
         <td>⚫</td>
        
         <td>⚪</td>
@@ -3184,7 +3174,7 @@ function getWebviewContent() {
         <td>🟦</td>
        
         <td>🟪</td>
-       
+       </tr><tr> 
         <td>🟫</td>
        
         <td>⬛</td>
@@ -3200,7 +3190,7 @@ function getWebviewContent() {
         <td>◽</td>
        
         <td>▪️</td>
-       
+       </tr><tr> 
         <td>▫️</td>
        
         <td>🔶</td>
@@ -3216,7 +3206,7 @@ function getWebviewContent() {
         <td>🔻</td>
        
         <td>💠</td>
-       
+       </tr><tr> 
         <td>🔘</td>
        
         <td>🔳</td>
@@ -3232,7 +3222,7 @@ function getWebviewContent() {
         <td>🏴</td>
        
         <td>🏳️</td>
-       
+       </tr><tr> 
         <td>🏳️‍🌈</td>
        
         <td>🏳️‍⚧️</td>
@@ -3244,6 +3234,8 @@ function getWebviewContent() {
         <td>🏴󠁧󠁢󠁳󠁣󠁴󠁿</td>
        
         <td>🏴󠁧󠁢󠁷󠁬󠁳󠁿</td>
+       </tr>
+ </tr>
        </tr>
         </table>
 

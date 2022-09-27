@@ -3,7 +3,7 @@
   "displayName": "markdow-grammer-hint",
   "description": "A grammer hint for markdown beginer",
   "publisher": "dboo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "https://github.com/dboooo/markdown-grammer-hint",
   "engines": {
     "vscode": "^1.71.0"

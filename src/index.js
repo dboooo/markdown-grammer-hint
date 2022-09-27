@@ -18,7 +18,7 @@ emoji = JSON.parse(
   })
 )
 for (const key in emoji) {
-  if (count % 8 === 0) {
+  if (count % 4 === 0) {
     arr.push('</tr><tr>')
   }
   arr.push(render(TEMPLATE_ITEM, { value: `${emoji[key]}` }))
